@@ -1,4 +1,4 @@
-name: Playwright Java Maven ExtentReports CI
+name: Playwright Java CI/CD
 
 on:
   push:
@@ -28,6 +28,13 @@ jobs:
       run: mvn clean test -DsuiteXmlFile=testng.xml
       working-directory: apps
 
+    - name: Upload Surefire Reports
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: surefire-reports
+        path: apps/target/surefire-reports/
+
     - name: Upload ExtentReports
       if: always()
       uses: actions/upload-artifact@v4
@@ -35,9 +42,11 @@ jobs:
         name: extent-report
         path: apps/reports/
 
-    - name: Upload Surefire Reports
-      if: always()
-      uses: actions/upload-artifact@v4
+    - name: Deploy ExtentReports to GitHub Pages
+      if: success()
+      uses: peaceiris/actions-gh-pages@v4
       with:
-        name: surefire-reports
-        path: apps/target/surefire-reports/
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: apps/reports
+        publish_branch: gh-pages
+
