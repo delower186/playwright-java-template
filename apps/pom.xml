@@ -9,7 +9,7 @@
 
   <name>apps</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://sandalia.com.bd/apps</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,28 +18,15 @@
 
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>org.junit</groupId>
-        <artifactId>junit-bom</artifactId>
-        <version>5.11.0</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
     </dependencies>
   </dependencyManagement>
 
   <dependencies>
-	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<!-- https://mvnrepository.com/artifact/com.microsoft.playwright/playwright -->
 	<dependency>
-	    <groupId>org.seleniumhq.selenium</groupId>
-	    <artifactId>selenium-java</artifactId>
-	    <version>4.32.0</version>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-manager -->
-	<dependency>
-	    <groupId>org.seleniumhq.selenium</groupId>
-	    <artifactId>selenium-manager</artifactId>
-	    <version>4.32.0</version>
+	    <groupId>com.microsoft.playwright</groupId>
+	    <artifactId>playwright</artifactId>
+	    <version>1.52.0</version>
 	</dependency>
     <!-- https://mvnrepository.com/artifact/org.testng/testng -->
     <dependency>

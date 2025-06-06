@@ -1,40 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-31T13:49:18 GMT+06:00" name="Default suite" finished-at="2025-05-31T13:49:25 GMT+06:00" duration-ms="6946">
+  <suite started-at="2025-06-06T17:50:49 GMT+06:00" name="Suite" finished-at="2025-06-06T17:51:09 GMT+06:00" duration-ms="20053">
     <groups>
     </groups>
-    <test started-at="2025-05-31T13:49:18 GMT+06:00" name="Default test" finished-at="2025-05-31T13:49:25 GMT+06:00" duration-ms="6946">
+    <test started-at="2025-06-06T17:50:49 GMT+06:00" name="Test" finished-at="2025-06-06T17:51:09 GMT+06:00" duration-ms="20053">
       <class name="sandalia.apps.AppTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:sandalia.apps.AppTest@6d763516]" started-at="2025-05-31T13:49:13 GMT+06:00" name="setup" finished-at="2025-05-31T13:49:18 GMT+06:00" duration-ms="4988" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:sandalia.apps.AppTest@5386659f]" started-at="2025-06-06T17:50:38 GMT+06:00" name="setup" finished-at="2025-06-06T17:50:49 GMT+06:00" duration-ms="10539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="emptyProgressInfos()[pri:0, instance:sandalia.apps.AppTest@6d763516]" started-at="2025-05-31T13:49:18 GMT+06:00" name="emptyProgressInfos" finished-at="2025-05-31T13:49:18 GMT+06:00" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="emptyProgressInfos()[pri:0, instance:sandalia.apps.AppTest@5386659f]" started-at="2025-06-06T17:50:49 GMT+06:00" name="emptyProgressInfos" finished-at="2025-06-06T17:50:49 GMT+06:00" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyProgressInfos -->
-        <test-method is-config="true" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:sandalia.apps.AppTest@6d763516]" started-at="2025-05-31T13:49:18 GMT+06:00" name="methodSetup" finished-at="2025-05-31T13:49:24 GMT+06:00" duration-ms="6464" status="PASS">
+        <test-method is-config="true" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:sandalia.apps.AppTest@5386659f]" started-at="2025-06-06T17:50:49 GMT+06:00" name="methodSetup" finished-at="2025-06-06T17:50:49 GMT+06:00" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void sandalia.apps.AppTest.testCase01() throws java.lang.InterruptedException]]>
+                <![CDATA[public void sandalia.apps.AppTest.listActiveIntegrations()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodSetup -->
-        <test-method signature="testCase01()[pri:0, instance:sandalia.apps.AppTest@6d763516]" started-at="2025-05-31T13:49:24 GMT+06:00" name="testCase01" finished-at="2025-05-31T13:49:25 GMT+06:00" duration-ms="437" status="PASS">
+        <test-method signature="listActiveIntegrations()[pri:0, instance:sandalia.apps.AppTest@5386659f]" started-at="2025-06-06T17:50:49 GMT+06:00" name="listActiveIntegrations" finished-at="2025-06-06T17:51:04 GMT+06:00" duration-ms="15662" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase01 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sandalia.apps.AppTest@6d763516]" started-at="2025-05-31T13:49:25 GMT+06:00" name="tearDown" finished-at="2025-05-31T13:49:25 GMT+06:00" duration-ms="259" status="PASS">
+        </test-method> <!-- listActiveIntegrations -->
+        <test-method is-config="true" signature="emptyProgressInfos()[pri:0, instance:sandalia.apps.AppTest@5386659f]" started-at="2025-06-06T17:51:04 GMT+06:00" name="emptyProgressInfos" finished-at="2025-06-06T17:51:04 GMT+06:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyProgressInfos -->
+        <test-method is-config="true" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:sandalia.apps.AppTest@5386659f]" started-at="2025-06-06T17:51:04 GMT+06:00" name="methodSetup" finished-at="2025-06-06T17:51:04 GMT+06:00" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sandalia.apps.AppTest.listAllIntegrations()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSetup -->
+        <test-method signature="listAllIntegrations()[pri:0, instance:sandalia.apps.AppTest@5386659f]" started-at="2025-06-06T17:51:04 GMT+06:00" name="listAllIntegrations" finished-at="2025-06-06T17:51:09 GMT+06:00" duration-ms="4336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listAllIntegrations -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sandalia.apps.AppTest@5386659f]" started-at="2025-06-06T17:51:09 GMT+06:00" name="tearDown" finished-at="2025-06-06T17:51:10 GMT+06:00" duration-ms="479" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- sandalia.apps.AppTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -17,8 +17,8 @@ public class Reports {
 		
 		ExtentSparkReporter spark = new ExtentSparkReporter(path);
 		spark.config().setTheme(Theme.DARK);
-		spark.config().setDocumentTitle("Big Leap Health");
-		spark.config().setReportName("Big Leap Health Test Automation Result");
+		spark.config().setDocumentTitle(EnvVariables.ReportDocumentTitle);
+		spark.config().setReportName(EnvVariables.ReportName);
 		extentReports.attachReporter(spark);
 		extentReports.setSystemInfo("Automation Engineer","Md Delower Hossain");
 		

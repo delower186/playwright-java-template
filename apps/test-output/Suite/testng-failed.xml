@@ -8,11 +8,11 @@
     <classes>
       <class name="sandalia.apps.AppTest">
         <methods>
-          <include name="close"/>
-          <include name="kill"/>
-          <include name="testCase02"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="listActiveIntegrations"/>
           <include name="emptyProgressInfos"/>
-          <include name="driver"/>
+          <include name="methodSetup"/>
         </methods>
       </class> <!-- sandalia.apps.AppTest -->
     </classes>
