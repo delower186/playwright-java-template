@@ -1,1 +1,1 @@
-# selenium-java-template
+# playwright-java-template
