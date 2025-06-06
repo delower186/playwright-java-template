@@ -40,7 +40,7 @@ public class Init extends EnvSetup{
 	@BeforeSuite
 	public void setup() {
         playwright = Playwright.create();
-        browser = playwright.chromium().launch(new LaunchOptions().setHeadless(false));
+        browser = playwright.chromium().launch(new LaunchOptions().setHeadless(true));
         // Page mean a browser tab
         page = browser.newPage();
         
